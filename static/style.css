@@ -1,0 +1,299 @@
+/**
+ * Reset
+ */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Typography
+ */
+
+html {
+  font-size: 1.3em;
+}
+
+body {
+  background-color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+code {
+  background: #1b2b34;
+  font-family: monospace;
+  padding: 0 0.3em 0.1em;
+  color: white;
+  border-radius: 3px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.827em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/**
+ *  Layout
+ */
+body {
+  box-sizing: border-box;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  color: #343433;
+}
+
+ul {
+  margin: 3em 0;
+  font-size: 1.2em;
+}
+
+.wrapper {
+  padding: 6em 0;
+  max-width: 40em;
+}
+
+/**
+ *  Styles
+ */
+.logo {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.photo {
+  /* position: absolute; */
+  background: url(https://react-days.de/wp-content/uploads/2017/06/Daniel-Snijders.jpg);
+  width: 70px;
+  height: 70px;
+  margin-right: 1em;
+  border-radius: 5px;
+  display: inline-block;
+  /* display: none; */
+  background-position: center;
+  background-size: cover;
+  /* transform: translateX(-120%); */
+}
+
+a {
+  text-decoration: none;
+  color: RGBA(30, 183, 235, 1);
+  font-weight: 600;
+  /* padding: 0 4px; */
+  position: relative;
+}
+
+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% + 10px);
+  height: 2px;
+  left: -5px;
+  top: 24px;
+  background: white;
+  z-index: -1;
+  transition: transform 0.15s ease-in-out;
+}
+
+a:hover {
+  color: white;
+}
+
+a:hover::after {
+  background: RGBA(30, 183, 235, 1);
+  transform: scaleY(13) translateY(-45%) rotate(-0.05deg);
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .logo {
+    position: relative;
+    margin-bottom: 3em;
+    text-align: right;
+    width: calc(100% - 2em);
+    left: auto;
+  }
+}
+
+@media (max-width: 630px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  ul {
+    font-size: 1em;
+    padding-left: 1em;
+  }
+
+  li {
+    list-style: disc;
+  }
+
+  .logo {
+    position: relative;
+    margin: 0 0 3em 0;
+    text-align: center;
+    width: calc(100%);
+    left: auto;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+}
