@@ -1,15 +1,17 @@
 {
   "name": "react-days-berlin-2017",
   "version": "1.0.0",
-  "description":
-    "Exercises and slides for React Days workshop \"Scale your React App for your first Million Users\"",
+  "description": "Exercises and slides for React Days workshop \"Scale your React App for your first Million Users\"",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "node index.js --test",
     "lint": "eslint ./"
   },
-  "keywords": ["React", "Days"],
+  "keywords": [
+    "React",
+    "Days"
+  ],
   "author": "Daniel Sneijers",
   "license": "ISC",
   "dependencies": {
