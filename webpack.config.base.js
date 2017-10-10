@@ -25,9 +25,8 @@ const baseConfig = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
-        include: resolve(__dirname, 'src'),
         exclude: /node-modules/,
       },
     ],
@@ -37,13 +36,13 @@ const baseConfig = {
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       title: 'Title',
-      template: 'index.ejs',
+      template: '../template.ejs',
       minify: { useShortDoctype: true },
       hash: false,
     }),
   ],
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.jsx'],
     modules: ['node_modules'],
   },
 };

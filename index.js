@@ -10,7 +10,7 @@ const message = shouldRunTests
 
 // Map containing [display name, folder name]
 const exercises = new Map([
-  ['Exercise 1: Handling state with Mobx', 'exercise-1-mobx'],
+  ['Exercise 1: Higher Order Components', 'exercise-1-higher-order-component'],
   ['Exercise 2: Handling async data', 'exercise-2-handling-async'],
 ]);
 
