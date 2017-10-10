@@ -1,11 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import store from '../store';
 import App from '../App';
 
-describe('<App />', () => {
-  it('should work', () => {
-    const tree = shallow(<App />);
+jest.mock('../store');
 
-    expect(tree.prop('firstName')).toBe('Daniel');
+describe('<App />', () => {
+  it('should receive the firstName from the store', () => {
+    const tree = shallow(<App />);
+    const state = store.getState();
+
+    expect(tree.prop('firstName')).toBe(state.firstName);
   });
 });
