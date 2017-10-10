@@ -11,7 +11,7 @@ const message = shouldRunTests
 // Map containing [display name, folder name]
 const exercises = new Map([
   ['Exercise 1: Higher Order Components', 'exercise-1-higher-order-component'],
-  ['Exercise 2: Handling async data', 'exercise-2-handling-async'],
+  ['Exercise 2: Functional Programming', 'exercise-2-functional-programming'],
 ]);
 
 inquirer
