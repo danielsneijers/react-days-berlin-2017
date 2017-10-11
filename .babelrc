@@ -1,5 +1,6 @@
 {
   "presets": ["react"],
+  "plugins": ["transform-decorators-legacy", "transform-class-properties"],
   "env": {
     "development": {
       "presets": [
@@ -10,17 +11,20 @@
             "targets": { "browsers": ["last 2 versions", "> 5%"] }
           }
         ]
-      ]
+      ],
+      "plugins": ["transform-decorators-legacy", "transform-class-properties"]
     },
     "test": {
       "presets": [
         ["env", { "targets": { "browsers": ["last 2 versions", "> 5%"] } }]
-      ]
+      ],
+      "plugins": ["transform-decorators-legacy", "transform-class-properties"]
     },
     "production": {
       "presets": [
         ["env", { "targets": { "browsers": ["last 2 versions", "> 5%"] } }]
-      ]
+      ],
+      "plugins": ["transform-decorators-legacy", "transform-class-properties"]
     }
   }
 }

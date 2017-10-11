@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<inject-App-with-counterStore
+  counterStore={
+    CounterStore {
+      "counter": 0,
+    }
+  }
+>
+  <App
+    counterStore={
+      CounterStore {
+        "counter": 0,
+      }
+    }
+  >
+    <div>
+      <h1>
+        Counter: 
+        0
+      </h1>
+      <button
+        onClick={[Function]}
+      >
+        Increase!
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Toggle decimals
+      </button>
+    </div>
+  </App>
+</inject-App-with-counterStore>
+`;

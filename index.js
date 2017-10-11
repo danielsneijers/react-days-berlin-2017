@@ -12,6 +12,7 @@ const message = shouldRunTests
 const exercises = new Map([
   ['Exercise 1: Higher Order Components', 'exercise-1-higher-order-component'],
   ['Exercise 2: Functional Programming', 'exercise-2-functional-programming'],
+  ['Exercise 3: State and Mobx', 'exercise-3-state-and-mobx'],
 ]);
 
 inquirer
