@@ -6,25 +6,21 @@ import { object } from 'prop-types';
 @inject('counterStore')
 @observer
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { withDecimals: false };
-  }
-
-  toggleDecimals = () => {
-    this.setState({ withDecimals: !this.state.withDecimals });
-  };
-
   render() {
-    const { counterWithDecimals, counter, increaseCounter } = this.props.counterStore;
-    const value = this.state.withDecimals ? counterWithDecimals : counter;
+    const {
+      counterWithDecimals,
+      counter,
+      increaseCounter,
+      toggleDecimals,
+      withDecimals,
+    } = this.props.counterStore;
+    const value = withDecimals ? counterWithDecimals : counter;
 
     return (
       <div>
         <h1>Counter: {value}</h1>
         <button onClick={increaseCounter}>Increase!</button>
-        <button onClick={this.toggleDecimals}>Toggle decimals</button>
+        <button onClick={toggleDecimals}>Toggle decimals</button>
       </div>
     );
   }

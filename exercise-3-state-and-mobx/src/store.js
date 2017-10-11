@@ -2,6 +2,7 @@ import { observable, computed, action } from 'mobx';
 
 class CounterStore {
   @observable counter = 0;
+  @observable withDecimals = false;
 
   @computed
   get counterWithDecimals() {
@@ -11,6 +12,11 @@ class CounterStore {
   @action
   increaseCounter = () => {
     this.counter += 1;
+  };
+
+  @action
+  toggleDecimals = () => {
+    this.withDecimals = !this.withDecimals;
   };
 }
 

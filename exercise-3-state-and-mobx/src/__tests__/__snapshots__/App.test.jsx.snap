@@ -5,6 +5,7 @@ exports[`<App /> renders correctly 1`] = `
   counterStore={
     CounterStore {
       "counter": 0,
+      "withDecimals": false,
     }
   }
 >
@@ -12,6 +13,7 @@ exports[`<App /> renders correctly 1`] = `
     counterStore={
       CounterStore {
         "counter": 0,
+        "withDecimals": false,
       }
     }
   >
