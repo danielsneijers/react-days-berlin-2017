@@ -24,3 +24,9 @@ npm test
 ```
 
 This again will show you a list of all the available exercises. Pick one and it'll run the tests for that exercise in watch mode. The tests will run after each change until you cancel the watch mode with `ctrl + c`.
+
+## The slides
+You can download the slides, they're in slides.pdf
+
+## Exercise answers
+If you're looking for the solutions to one of the exercises you can checkout the `exercise-answers` branch, it will contain the code to make the tests pass so you can compare your code.
